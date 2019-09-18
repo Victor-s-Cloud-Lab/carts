@@ -96,7 +96,7 @@ String LSN = (bsh.args.length &gt; 0) ? bsh.args[0] : &quot;Test Scenario&quot;;
 String TSN = sampler.getName();
 String VU = ctx.getThreadGroup().getName() + ctx.getThreadNum();
 String headerValue = &quot;LSN=&quot;+ LSN + &quot;;TSN=&quot; + TSN + &quot;;LTN=&quot; + LTN + &quot;;VU=&quot; + VU + &quot;;&quot;;
-            
+
 // -------------------------------------------
 // Set header
 // -------------------------------------------
@@ -104,7 +104,7 @@ String headerValue = &quot;LSN=&quot;+ LSN + &quot;;TSN=&quot; + TSN + &quot;;LT
 HeaderManager hm = sampler.getHeaderManager();
 hm.removeHeaderNamed(&quot;x-dynatrace-test&quot;);
 hm.add(new org.apache.jmeter.protocol.http.control.Header(&quot;x-dynatrace-test&quot;, headerValue));
- 
+
           </stringProp>
         </BeanShellPreProcessor>
         <hashTree/>
